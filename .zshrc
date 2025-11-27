@@ -243,3 +243,11 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bun completions
+[ -s "/Users/tobiaskopelke/.bun/_bun" ] && source "/Users/tobiaskopelke/.bun/_bun"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/tobiaskopelke/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions

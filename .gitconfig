@@ -21,6 +21,9 @@
 	# Commit all changes.
 	ca = !git add ':(exclude,attr:builtin_objectmode=160000)' && git commit -av
 
+	# Checkout shortcut
+	co = checkout
+
 	# Switch to a branch, creating it if necessary.
 	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
 
@@ -173,6 +176,9 @@
 	insteadOf = "gst:"
 	pushInsteadOf = "gist:"
 	pushInsteadOf = "git://gist.github.com/"
+
+[url "https://github.2rioffice.com/"]
+
 
 [url "git://gist.github.com/"]
 
