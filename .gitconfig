@@ -205,3 +205,7 @@
 	signingKey = ~/.ssh/id_ed25519.pub
 	name = Tobias Kopelke
 	email = nox@raynode.de
+
+
+[includeIf "gitdir:~/projects/risk/"]
+	path = ~/.gitconfig-risk
