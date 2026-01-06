@@ -18,6 +18,9 @@
 	# Clone a repository including all submodules.
 	c = clone --recursive
 
+	# Add all changes, excluding gitlinks (submodules).
+	A = add ':(exclude,attr:builtin_objectmode=160000)' .
+
 	# Commit all changes.
 	ca = !git add ':(exclude,attr:builtin_objectmode=160000)' && git commit -av
 
